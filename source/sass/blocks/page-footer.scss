@@ -1,0 +1,15 @@
+.page-footer {
+  text-transform: uppercase;
+}
+
+.page-footer__hashtag {
+  padding-top: 28px;
+  padding-bottom: 33px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+
+  a {
+    color: $black;
+  }
+}

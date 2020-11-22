@@ -1,0 +1,41 @@
+.features {
+  text-transform: uppercase;
+
+  p {
+    margin: 0;
+  }
+}
+
+.features__item {
+  padding-top: 39px;
+  padding-bottom: 35px;
+  text-transform: uppercase;
+  text-align: center;
+
+  &--blue {
+    color: $white;
+    background-color: $blue;
+  }
+}
+
+.features__title {
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.features__number {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.features__description {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.features__list {
+  list-style: none;
+  padding: 0;
+}
