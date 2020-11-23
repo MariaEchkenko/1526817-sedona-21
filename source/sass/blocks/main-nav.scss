@@ -1,5 +1,4 @@
 .main-nav {
-  font-size: 18px;
   line-height: 40px;
   font-weight: bold;
   text-transform: uppercase;
@@ -16,8 +15,8 @@
   padding-bottom: 5px;
   text-align: center;
   background-color: $blue;
+}
 
-  a {
-    color: $white;
-  }
+.main-nav__link {
+  color: $white;
 }
