@@ -1,4 +1,6 @@
 .form-component__title {
+  padding-top: 20px;
+  padding-bottom: 17px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -10,12 +12,14 @@
 }
 
 .form-component__input {
+  padding: 18px 22px 14px 22px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   color: $black;
   background-color: $background-grey;
+  border: none;
 }
 
 .form-component__list {
@@ -25,6 +29,7 @@
 }
 
 .form-component__textarea {
+  margin-bottom: 51px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
