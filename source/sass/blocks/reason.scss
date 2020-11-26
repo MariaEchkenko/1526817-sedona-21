@@ -1,9 +1,15 @@
 .reason {
-  margin: 0;
+  margin-top: 0;
   background-color: $grey;
 
   p {
     margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
   }
 }
 
