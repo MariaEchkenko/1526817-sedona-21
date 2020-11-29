@@ -7,6 +7,16 @@
 
 .page__body {
   min-height: 100%;
+  background-color: $page-grey;
+}
+
+.page__wrapper {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
+  background-color: $white;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }

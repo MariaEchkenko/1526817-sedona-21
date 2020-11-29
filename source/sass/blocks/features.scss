@@ -1,25 +1,8 @@
 .features {
   text-transform: uppercase;
-
-  p {
-    margin: 0;
-  }
-}
-
-.features__wrapper {
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    max-width: 768px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 1200px;
-  }
 }
 
 .features__item {
-  text-transform: uppercase;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -33,8 +16,15 @@
   color: $white;
   background-color: $blue;
 
+  p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
   @media (min-width: $tablet-width) {
     width: 33%;
+    box-sizing: border-box;
   }
 }
 
@@ -50,18 +40,18 @@
 }
 
 .features__title {
-  margin-top: 0;
+  margin: 0;
+  padding-bottom: 20px;
   font-weight: bold;
 }
 
 .features__number {
-  font-size: 14px;
-  line-height: 21px;
+  padding-bottom: 20px;
 }
 
-.features__description {
-  font-size: 14px;
-  line-height: 21px;
+.features__img {
+  display: block;
+  margin: 0 auto;
 }
 
 .features__list {

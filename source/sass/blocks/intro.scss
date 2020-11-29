@@ -3,19 +3,21 @@
   text-align: center;
 }
 
-.intro__img {
-  padding-bottom: 32px;
-}
-
 .intro__title {
-  margin: 0;
-  margin-bottom: 30px;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: bold;
-  font-size: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
-.intro__text {
+.intro__description {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 50px;
   font-size: 14px;
+  color: $simple-black;
 }

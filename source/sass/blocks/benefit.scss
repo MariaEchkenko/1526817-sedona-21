@@ -9,7 +9,7 @@
 }
 
 .benefit__item {
-  margin-left: 69px;
+  margin-left: 49px;
   margin-bottom: 6px;
 
   &:last-child {
@@ -17,6 +17,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: 33%;
     margin-left: 0;
   }
 }

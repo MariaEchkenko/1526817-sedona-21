@@ -3,9 +3,6 @@
   text-align: center;
 
   p {
-    padding: 0 29px;
-    /*box-sizing: border-box;*/
-
     @media (min-width: $tablet-width) {
       max-width: 435px;
     }
@@ -16,9 +13,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 33px;
+  padding-bottom: 49px;
 }
 
 .search-hotel__question {
+  margin: 0;
+  padding-bottom: 30px;
   font-size: 21px;
 }
 
@@ -30,9 +31,7 @@
 }
 
 .search-hotel__button {
-  width: 280px;
   align-self: center;
-  margin-bottom: 49px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
