@@ -8,14 +8,10 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 45px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1200px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
   }
 }
 

@@ -4,11 +4,14 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    text-align: center;
   }
 }
 
 .reason__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-top: 25px;
   padding-bottom: 25px;
   text-align: center;
@@ -21,10 +24,26 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .reason__item {
+    padding-top: 42px;
+    padding-bottom: 42px;
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
 .reason__title {
   margin: 0;
   padding-bottom: 15px;
   font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    max-width: 160px;
+  }
 }
 
 .reason__number {
