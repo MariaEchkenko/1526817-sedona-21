@@ -1,9 +1,25 @@
 .search-hotel {
   text-transform: uppercase;
   text-align: center;
+
+  p {
+    @media (min-width: $tablet-width) {
+      max-width: 435px;
+    }
+  }
+}
+
+.search-hotel__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 33px;
+  padding-bottom: 49px;
 }
 
 .search-hotel__question {
+  margin: 0;
+  padding-bottom: 30px;
   font-size: 21px;
 }
 
@@ -15,5 +31,10 @@
 }
 
 .search-hotel__button {
-  margin-bottom: 49px;
+  align-self: center;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+  }
 }

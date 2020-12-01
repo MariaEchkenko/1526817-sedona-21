@@ -1,3 +1,27 @@
+.benefit {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    text-align: center;
+  }
+}
+
+.benefit__item {
+  margin-left: 49px;
+  margin-bottom: 6px;
+
+  &:last-child {
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 33%;
+    margin-left: 0;
+  }
+}
+
 .benefit__title {
   font-weight: bold;
 }
@@ -6,4 +30,14 @@
   font-size: 14px;
   line-height: 21px;
   color: $simple-black;
+}
+
+@media (min-width: $tablet-width) {
+  .benefit__item--food {
+    order: 2;
+  }
+
+  .benefit__item--souvenirs {
+    order: 3;
+  }
 }
