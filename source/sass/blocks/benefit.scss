@@ -1,32 +1,50 @@
 .benefit {
   display: flex;
   flex-direction: column;
+  padding-top: 35px;
+  padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    padding-top: 158px;
+    padding-bottom: 59px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 80px;
   }
 }
 
 .benefit__item {
   margin-left: 49px;
-  margin-bottom: 6px;
+  margin-bottom: 26px;
 
   &:last-child {
-    margin-bottom: 35px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $tablet-width) {
-    width: 33%;
+    width: 33.33%;
     margin-left: 0;
+    margin-bottom: 0;
   }
 }
 
 .benefit__title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 18px;
   font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+    font-size: 21px;
+  }
 }
 
 .benefit__description {
+  margin: 0;
   font-size: 14px;
   line-height: 21px;
   color: $simple-black;

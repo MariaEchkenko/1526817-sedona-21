@@ -1,8 +1,18 @@
 .button {
   display: block;
   padding: 15px 32px 17px 32px;
+  font-size: 21px;
   font-weight: bold;
   text-transform: uppercase;
   color: $white;
   background-color: $blue;
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-active;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

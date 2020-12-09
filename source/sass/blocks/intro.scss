@@ -3,21 +3,63 @@
   text-align: center;
 }
 
+.intro__img {
+  width: 100%;
+  height: 389px;
+  background-image: url("../../img/back_mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+
+  @media (min-width: $tablet-width) {
+    height: 518px;
+    background-image: url("../../img/back_tablet.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/back_desktop.jpg");
+  }
+}
+
+.intro__text {
+  padding-top: 32px;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+  }
+}
+
 .intro__title {
-  margin-top: 25px;
-  margin-bottom: 40px;
+  margin: 0;
+  margin-bottom: 32px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+
+    br:first-child {
+      display: none;
+    }
   }
 }
 
 .intro__description {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 46px;
   font-size: 14px;
   color: $simple-black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 41px;
+  }
 }

@@ -2,18 +2,20 @@
   background-color: $grey;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
   }
 }
 
 .reason__item {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 26px;
+  padding-bottom: 24px;
   text-align: center;
 
   p {
@@ -22,30 +24,43 @@
     line-height: 21px;
     color: $simple-black;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .reason__item {
+  @media (min-width: $tablet-width) {
     padding-top: 42px;
     padding-bottom: 42px;
-    margin-right: 20px;
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 62px;
+  }
+
+  /*&:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    top: 167px;
+    left: 20px;
+    right: 20px;
+    height: 1px;
+    background-color: #d6d6d6;
+  }*/
 }
 
 .reason__title {
   margin: 0;
-  padding-bottom: 15px;
+  padding-bottom: 11px;
+  font-size: 18px;
   font-weight: bold;
 
   @media (min-width: $tablet-width) {
     max-width: 160px;
+    font-size: 21px;
   }
 }
 
 .reason__number {
-  padding-bottom: 20px;
+  padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 25px;
+  }
 }
