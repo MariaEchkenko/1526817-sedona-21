@@ -10,27 +10,31 @@
     <div class="page__wrapper">
 
       <header class="page-header">
-        <a class="page-header__logo">
-          <img src="img/logotype_tablet.svg" width="102" height="84" alt="Городок Седона">
-        </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--active">Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="catalog.html">Фото и видео</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="form.html">Форма отзыва</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#">HTML Academy</a>
-              </li>
-            </ul>
+            <a class="page-header__logo">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logotype_desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logotype_tablet.svg">
+                <img class="page-header__image" src="img/logotype_mobile.svg" width="102" height="84"alt="Городок Седона">
+              </picture>
+            </a>
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           </div>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--active">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
         </nav>
       </header>
 
@@ -38,7 +42,12 @@
         <h1 class="visually-hidden">Главная страница города Седона</h1>
         <section class="intro">
           <div class="intro__wrapper">
-            <div class="intro__img" width="" height="389" alt=""></div>
+            <div class="intro__slogan">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/text_index_tablet.svg">
+                <img class="intro__img" src="img/text_index.svg" width="282" height="214">
+              </picture>
+            </div>
             <div class="intro__text page-main__container">
               <h2 class="intro__title">Седона &mdash; небольшой<br> городок в Аризоне,<br> заслуживающий большего!</h2>
               <p class="intro__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -48,7 +57,7 @@
         <section class="features">
           <div class="features__wrapper">
             <div class="features__item">
-              <div class="features__text page-main__container">
+              <div class="features__text features__text--cut page-main__container">
                 <h3 class="features__title">Настоящий городок</h3>
                 <p class="features__number">№1</p>
                 <p class="features__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
@@ -66,7 +75,7 @@
               </li>
               <li class="benefit__item benefit__item--food page-main__container">
                 <h3 class="benefit__title">Еда</h3>
-                <p class="benefit__description">Всегда заказывайте фирменный бургер, вы не&nbsp;разочаруетесь!</p>
+                <p class="benefit__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
             </ul>
             <div class="features__item">

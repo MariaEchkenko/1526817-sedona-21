@@ -18,11 +18,16 @@
   padding-bottom: 24px;
   text-align: center;
 
-  p {
-    margin: 0;
-    font-size: 14px;
-    line-height: 21px;
-    color: $simple-black;
+  @media (max-width: $mobile-width-only) {
+    &:not(:last-child)::before {
+      content: "";
+      position: absolute;
+      top: 167px;
+      left: 20px;
+      right: 20px;
+      height: 1px;
+      background-color: #d6d6d6;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -34,15 +39,12 @@
     padding-bottom: 62px;
   }
 
-  /*&:not(:last-child)::before {
-    content: "";
-    position: absolute;
-    top: 167px;
-    left: 20px;
-    right: 20px;
-    height: 1px;
-    background-color: #d6d6d6;
-  }*/
+  p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 21px;
+    color: $simple-black;
+  }
 }
 
 .reason__title {

@@ -17,11 +17,72 @@
 }
 
 .benefit__item {
+  position: relative;
   margin-left: 49px;
   margin-bottom: 26px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &--habitation::before {
+    content: "";
+    position: absolute;
+    left: -29px;
+    top: -9px;
+    width: 39px;
+    height: 37px;
+    background-image: url("../../img/icon_house.svg");
+
+    @media (min-width: $tablet-width) {
+      left: 50%;
+      transform: translateX(-50%);
+      top: -97px;
+      width: 75px;
+      height: 72px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &--souvenirs::before {
+    content: "";
+    position: absolute;
+    left: -24px;
+    top: -10px;
+    width: 32px;
+    height: 38px;
+    background-image: url("../../img/icon_gift.svg");
+
+    @media (min-width: $tablet-width) {
+      left: 50%;
+      transform: translateX(-50%);
+      top: -102px;
+      width: 64px;
+      height: 75px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &--food::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: -4px;
+    width: 40px;
+    height: 35px;
+    background-image: url("../../img/icon_burger.svg");
+
+    @media (min-width: $tablet-width) {
+      left: 50%;
+      transform: translateX(-50%);
+      top: -95px;
+      width: 76px;
+      height: 68px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 
   @media (min-width: $tablet-width) {

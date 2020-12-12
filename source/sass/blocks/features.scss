@@ -11,10 +11,14 @@
 }
 
 .features__text {
-  padding-top: 36px;
+  padding-top: 39px;
   padding-bottom: 39px;
   color: $white;
   background-color: $blue;
+
+  &--cut {
+    padding-top: 48px;
+  }
 
   p {
     margin: 0 -8px;

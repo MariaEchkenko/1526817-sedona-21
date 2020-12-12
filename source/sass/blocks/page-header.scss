@@ -6,11 +6,12 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  height: 84px;
   z-index: 3;
-  order: 2;
+}
 
+.page-header__image {
   @media (min-width: $desktop-width) {
-    height: 96.5px;
+    width: 187px;
+    height: 97px;
   }
 }
