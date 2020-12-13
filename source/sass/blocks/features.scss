@@ -12,19 +12,31 @@
 
 .features__text {
   padding-top: 39px;
-  padding-bottom: 35px;
+  padding-bottom: 39px;
   color: $white;
   background-color: $blue;
 
+  &--cut {
+    padding-top: 48px;
+  }
+
   p {
-    margin: 0;
+    margin: 0 -8px;
     font-size: 14px;
     line-height: 21px;
   }
 
   @media (min-width: $tablet-width) {
-    width: 33%;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
     box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 47px;
   }
 }
 
@@ -41,12 +53,26 @@
 
 .features__title {
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  font-size: 18px;
   font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    max-width: 160px;
+  }
 }
 
 .features__number {
-  padding-bottom: 20px;
+  padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 25px;
+  }
+}
+
+.features__description {
+  padding: 0 20px;
 }
 
 .features__img {

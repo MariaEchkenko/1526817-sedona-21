@@ -16,10 +16,14 @@
 }
 
 .page-footer__hashtag {
-  padding-top: 38px;
-  padding-bottom: 33px;
+  padding-top: 39px;
+  margin-bottom: 33px;
   font-size: 21px;
   font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 13px;
+  }
 }
 
 .page-footer__link {

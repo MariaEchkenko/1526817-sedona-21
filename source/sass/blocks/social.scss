@@ -2,7 +2,7 @@
   display: flex;
   padding: 0;
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
   list-style: none;
 
   @media (min-width: $tablet-width) {
@@ -13,11 +13,41 @@
 
 .social__item {
   margin-right: 6px;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  background-color: $blue;
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+.social__link {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-color: $blue;
+
+  &--twitter {
+    background-image: url("../../img/icon_twitter.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--facebook {
+    background-image: url("../../img/icon_facebook.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--youtube {
+    background-image: url("../../img/icon_youtube.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-active;
   }
 }
