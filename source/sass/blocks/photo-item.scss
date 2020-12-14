@@ -1,0 +1,27 @@
+.photo-item__block {
+  margin: 0;
+  padding-top: 22px;
+  margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.photo-item__img {
+  display: block;
+}
+
+.photo-item__description {
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+    background-color: $background-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+    background-color: $black;
+    opacity: 0.3;
+  }
+}

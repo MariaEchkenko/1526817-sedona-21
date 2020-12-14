@@ -1,0 +1,21 @@
+.photo-description {
+  font-size: 14px;
+  line-height: 24px;
+
+  @media (min-width: $desktop-width) {
+    background-color: $black;
+    opacity: 0.3;
+  }
+}
+
+.photo-description__title {
+  margin: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.photo-description__autor {
+  margin: 0;
+  margin-bottom: 10px;
+  color: $simple-black;
+}

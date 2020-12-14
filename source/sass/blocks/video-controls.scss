@@ -1,0 +1,12 @@
+.video-controls__scale {
+  background-color: $black;
+  opacity: 0.6;
+}
+
+.video-controls__group {
+  background-color: $background-grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+}

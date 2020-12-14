@@ -1,3 +1,9 @@
 .page-main__container {
   padding: 0 20px;
+
+  &--gallery {
+    @media (min-width: $tablet-width) and (max-width: 1199px) {
+      padding: 0 60px;
+    }
+  }
 }

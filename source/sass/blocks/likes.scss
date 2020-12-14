@@ -1,0 +1,17 @@
+.likes__button {
+  display: block;
+  width: 23px;
+  height: 21px;
+  margin-bottom: 21px;
+  cursor: pointer;
+  border: none;
+  background-image: url("../../img/like_icon.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.likes__number {
+  margin: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
