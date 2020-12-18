@@ -2,9 +2,8 @@
   font-size: 14px;
   line-height: 24px;
 
-  @media (min-width: $desktop-width) {
-    background-color: $black;
-    opacity: 0.3;
+  @media (min-width: $tablet-width) {
+    display: flex;
   }
 }
 
@@ -18,4 +17,14 @@
   margin: 0;
   margin-bottom: 10px;
   color: $simple-black;
+}
+
+.photo-description__likes {
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    margin-left: auto;
+    margin-right: 30px;
+  }
 }

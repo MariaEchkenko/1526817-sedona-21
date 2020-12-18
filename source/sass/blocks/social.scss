@@ -6,6 +6,7 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
+    justify-content: center;
     margin-top: 36px;
     margin-bottom: 36px;
   }

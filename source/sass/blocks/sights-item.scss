@@ -1,3 +1,9 @@
+.sights-item {
+  @media (min-width: $tablet-width) and (max-width: 1199px) {
+    width: 50%;
+  }
+}
+
 .sights-item__label {
   font-weight: bold;
 }

@@ -3,11 +3,17 @@
   width: 23px;
   height: 21px;
   margin-bottom: 21px;
+  margin-right: 14px;
   cursor: pointer;
   border: none;
   background-image: url("../../img/like_icon.svg");
   background-repeat: no-repeat;
   opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-right: 9px;
+  }
 }
 
 .likes__number {

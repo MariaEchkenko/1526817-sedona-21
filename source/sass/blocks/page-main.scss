@@ -1,9 +1,25 @@
 .page-main__container {
   padding: 0 20px;
 
+  &--tablet {
+    @media (min-width: $tablet-width) and (max-width: 1199px) {
+      padding: 0 60px;
+    }
+  }
+
+  &--index {
+    @media (min-width: $desktop-width) {
+      padding: 0 120px;
+    }
+  }
+
   &--gallery {
     @media (min-width: $tablet-width) and (max-width: 1199px) {
       padding: 0 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
     }
   }
 }
