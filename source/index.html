@@ -45,7 +45,7 @@
             <div class="intro__slogan">
               <picture>
                 <source media="(min-width: 768px)" srcset="img/text_index_tablet.svg">
-                <img class="intro__img" src="img/text_index.svg" width="282" height="214">
+                <img class="intro__img" src="img/text_index.svg" width="282" height="214" alt="Добро пожаловать в Седону!">
               </picture>
             </div>
             <div class="intro__text intro__text--index page-main__container">
@@ -62,7 +62,13 @@
                 <p class="features__number">№1</p>
                 <p class="features__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
-              <img class="features__img features__img--second" src="https://via.placeholder.com/320x260">
+              <div class="features__img-wrapper features__img-wrapper--second">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo_city_desktop.jpg 1x, img/photo_city_desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo_city_tablet.jpg 1x, img/photo_city_tablet@2x.jpg 2x">
+                  <img class="features__img" src="img/photo_city_mobile.jpg" srcset="img/photo_city_mobile@2x.jpg 2x" alt="Вид на городок Седона">
+                </picture>
+              </div>
             </div>
             <ul class="features__list benefit">
               <li class="benefit__item benefit__item--habitation page-main__container">
@@ -84,7 +90,13 @@
                 <p class="features__number">№2</p>
                 <p class="features__description">Да, по нему можно пройти!Если вы осмелитесь, конечно</p>
               </div>
-              <img class="features__img features__img--first" src="https://via.placeholder.com/320x260">
+              <div class="features__img-wrapper features__img-wrapper--first">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo_bridge_desktop.jpg 1x, img/photo_bridge_desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo_bridge_tablet.jpg 1x, img/photo_bridge_tablet@2x.jpg 2x">
+                  <img class="features__img" src="img/photo_bridge_mobile.jpg" srcset="img/photo_bridge_mobile@2x.jpg 2x" alt="Мост Дьявола">
+                </picture>
+              </div>
             </div>
             <ul class="features__list reason">
               <li class="reason__item page-main__container">
@@ -122,8 +134,8 @@
         </section>
       </main>
 
-      <footer class="page-footer page-main__container page-main__container--tablet page-main__container--index">
-        <div class="page-footer__wrapper">
+      <footer class="page-footer">
+        <div class="page-footer__wrapper page-main__container page-main__container--tablet page-main__container--index">
           <div class="page-footer__hashtag">
             <a class="page-footer__link" href="#">#visitsedona</a>
           </div>

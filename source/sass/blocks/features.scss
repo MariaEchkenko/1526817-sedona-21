@@ -40,17 +40,6 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .features__img {
-    flex-grow: 1;
-    height: 256px;
-
-    &--first {
-      order: -1;
-    }
-  }
-}
-
 .features__title {
   margin: 0;
   padding-bottom: 10px;
@@ -75,8 +64,20 @@
   padding: 0 20px;
 }
 
+.features__img-wrapper {
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+
+    &--first {
+      order: -1;
+    }
+  }
+}
+
 .features__img {
   display: block;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
 }
 

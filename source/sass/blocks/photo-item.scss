@@ -11,17 +11,19 @@
 
 .photo-item__img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .photo-item__description {
   @media (min-width: $tablet-width) {
-    padding-left: 20px;
     background-color: $background-grey;
   }
 
   @media (min-width: $desktop-width) {
-    color: $white;
-    background-color: $black;
-    opacity: 0.3;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
