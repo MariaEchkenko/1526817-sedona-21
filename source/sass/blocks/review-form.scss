@@ -1,3 +1,65 @@
+.review-form {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .review-form__item {
+  margin: 0;
+  padding: 0;
   border: none;
+  width: 100%;
+
+  &--user {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--half {
+      width: 50%;
+    }
+
+    &--feeling {
+      order: -2;
+    }
+
+    &--user {
+      order: -1;
+    }
+  }
+}
+
+.review-form__wrapper {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+
+  &--contacts {
+    @media (max-width: 1199px) {
+      flex-direction: column;
+    }
+  }
+}
+
+.review-form__button {
+  width: 100%;
+  font-family: "PT Sans", "Arial", sans-serif;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+}
+
+.review-form__required {
+  margin-left: auto;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $simple-black;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }

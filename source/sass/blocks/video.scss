@@ -1,0 +1,38 @@
+.video {
+  padding-top: 32px;
+  text-align: center;
+}
+
+.video__wrapper {
+  @media (min-width: $desktop-width) {
+    padding: 0 200px;
+  }
+}
+
+.video__intro {
+  text-transform: uppercase;
+}
+
+.video__title {
+  margin: 0;
+  margin-bottom: 35px;
+  font-size: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
+}
+
+.video-description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: $simple-black;
+}
+
+.video-controls {
+  @media (min-width: $tablet-width) {
+    background-color: $black;
+    opacity: 0.6;
+  }
+}
