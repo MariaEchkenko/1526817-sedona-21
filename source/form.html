@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -44,81 +45,85 @@
             <div class="intro__slogan intro__slogan--catalog">
               <img class="intro__img intro__img--catalog" src="img/text_sedona.svg" width="229" height="39" alt="Седона">
             </div>
-            <div class="intro__text page-main__container">
-              <h2 class="intro__title">Оставьте свой отзыв</h2>
-              <p class="intro__description intro__description--catalog">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+            <div class="intro__text intro__text--form page-main__container">
+              <h2 class="intro__title intro__title--large">Оставьте свой отзыв</h2>
+              <p class="intro__description intro__description--catalog">Помогите нашим отелям стать лучше! Оставьте отзыв о них,<br> а также о посещенных вами достопримечательностях</p>
             </div>
           </div>
         </section>
         <form class="review-form page-main__container page-main__container--tablet page-main__container--index" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset class="review-form__item review-form__item--half review-form__item--user form-component">
-            <legend class="form-component__title">Представьтесь:</legend>
-            <div class="form-component__container">
-              <label class="form-component__lable" for="user-name">Имя*:</label>
-              <input class="form-component__input" type="text" name="user-name" id="user-name" placeholder="Петр" required>
+          <fieldset class="review-form__item review-form__item--user form-component">
+            <legend class="form-component__title form-component__title--left">Представьтесь:</legend>
+            <div class="form-component__container form-component__container--name">
+              <label class="form-component__lable form-component__lable--user" for="user-name">Имя*:</label>
+              <input class="form-component__input" type="text" size="10" name="user-name" id="user-name" placeholder="Петр" required>
             </div>
             <div class="form-component__container">
-              <label class="form-component__lable" for="user-surname">Фамилия*:</label>
+              <label class="form-component__lable form-component__lable--user" for="user-surname">Фамилия*:</label>
               <input class="form-component__input" type="text" size="10" name="user-surname" id="user-surname" placeholder="Иванов" required>
             </div>
             <div class="form-component__container">
-              <label class="form-component__lable" for="user-patronymic">Отчество:</label>
-              <input class="form-component__input" type="text" size="10" name="user-patronymic" id="user-patronymic" placeholder="Александрович">
+              <label class="form-component__lable form-component__lable--user" for="user-patronymic">Отчество:</label>
+              <input class="form-component__input form-component__input--last" type="text" size="10" name="user-patronymic" id="user-patronymic" placeholder="Александрович">
             </div>
           </fieldset>
           <fieldset class="review-form__item review-form__item--contacts form-component">
-            <legend class="form-component__title">Контактная информация:</legend>
+            <legend class="form-component__title form-component__title--contacts form-component__title--line">Контактная информация:</legend>
             <div class="review-form__wrapper review-form__wrapper--contacts">
               <div class="form-component__container form-component__container--contacts">
-                <label class="form-component__lable form-component__lable--contacts" for="user-tel">Контактный телефон*:</label>
-                <input class="form-component__input form-component__input--tel" type="tel" name="user-tel" id="user-tel" placeholder="Введите телефон" required>
+                <label class="form-component__lable form-component__lable--contacts form-component__lable--tel" for="user-tel"><span>Контактный </span>телефон*:</label>
+                <div class="form-component__input-container form-component__input-container--tel">
+                  <input class="form-component__input form-component__input--tel" type="tel" name="user-tel" id="user-tel" placeholder="Введите телефон" required>
+                </div>
               </div>
               <div class="form-component__container form-component__container--contacts">
                 <label class="form-component__lable form-component__lable--contacts" for="user-email">Электронная почта*:</label>
-                <input class="form-component__input form-component__input--email" type="email" name="user-email" id="user-email" placeholder="Введите e-mail" required>
+                <div class="form-component__input-container form-component__input-container--email">
+                  <input class="form-component__input" type="email" name="user-email" id="user-email" placeholder="Введите e-mail" required>
+                </div>
               </div>
             </div>
           </fieldset>
-          <fieldset class="review-form__item review-form__item--half review-form__item--feeling form-component">
-            <legend class="form-component__title">Ваше общее впечатление:</legend>
+          <fieldset class="review-form__item review-form__item--feeling form-component">
+            <legend class="form-component__title form-component__title--left form-component__title--feeling">Ваше общее впечатление:</legend>
             <ul class="form-component__list">
               <li class="form-component__item feeling-item">
-                <input class="feeling-item__input" type="radio" name="feeling" value="positive" id="feeling-positive" checked>
+                <input class="visually-hidden feeling-item__input" type="radio" name="feeling" value="positive" id="feeling-positive" checked>
                 <label class="feeling-item__label" for="feeling-positive">Скорее положительное</label>
               </li>
               <li class="form-component__item feeling-item">
-                <input class="feeling-item__input" type="radio" name="feeling" value="negative" id="feeling-negative">
+                <input class="visually-hidden feeling-item__input" type="radio" name="feeling" value="negative" id="feeling-negative">
                 <label class="feeling-item__label" for="feeling-negative">Скорее отрицательное</label>
               </li>
               <li class="form-component__item feeling-item">
-                <input class="feeling-item__input" type="radio" name="feeling" value="don't-know" id="feeling-don't-know">
+                <input class="visually-hidden feeling-item__input" type="radio" name="feeling" value="don't-know" id="feeling-don't-know">
                 <label class="feeling-item__label" for="feeling-don't-know">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="review-form__item review-form__item--sights form-component">
-            <legend class="form-component__title">Посещенные достопримечательности:</legend>
+            <legend class="form-component__title form-component__title--sights form-component__title--line">Посещенные<br>достопримечательности:</legend>
             <ul class="form-component__list form-component__list--sights">
               <li class="form-component__item sights-item">
-                <input class="sights-item__input" type="checkbox" name="devils-bridge" id="devils-bridge" checked>
+                <input class="visually-hidden sights-item__input" type="checkbox" name="devils-bridge" id="devils-bridge" checked>
                 <label class="sights-item__label" for="devils-bridge">Мост Дьявола</label>
               </li>
               <li class="form-component__item sights-item">
-                <input class="sights-item__input" type="checkbox" name="bell-mountain" id="bell-mountain" checked>
+                <input class="visually-hidden sights-item__input" type="checkbox" name="bell-mountain" id="bell-mountain" checked>
                 <label class="sights-item__label" for="bell-mountain">Гора-Колокол</label>
               </li>
               <li class="form-component__item sights-item">
-                <input class="sights-item__input" type="checkbox" name="slide-park" id="slide-park" checked>
+                <input class="visually-hidden sights-item__input" type="checkbox" name="slide-park" id="slide-park" checked>
                 <label class="sights-item__label" for="slide-park">Слайд-парк</label>
               </li>
               <li class="form-component__item sights-item">
-                <input class="sights-item__input" type="checkbox" name="red-rocks" id="red-rocks">
+                <input class="visually-hidden sights-item__input" type="checkbox" name="red-rocks" id="red-rocks">
                 <label class="sights-item__label" for="red-rocks">Красные скалы</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="review-form__item review-form__item--emotion form-component">
-            <legend class="form-component__title">Опишите свои эмоции:</legend>
+            <legend class="form-component__title form-component__title--emotion form-component__title--line">Опишите свои эмоции:</legend>
             <textarea class="form-component__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <div class="review-form__wrapper">

@@ -1,9 +1,69 @@
 .sights-item {
+  margin-bottom: 54px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 57px;
+  }
+
+  &:last-child {
+    margin-bottom: 39px;
+  }
+
   @media (min-width: $tablet-width) and (max-width: 1199px) {
     width: 50%;
+    padding-left: 35px;
+    box-sizing: border-box;
   }
 }
 
 .sights-item__label {
+  position: relative;
+  display: block;
+  padding-left: 79px;
+  cursor: pointer;
   font-weight: bold;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: -16px;
+    width: 58px;
+    height: 58px;
+    border: 29px solid $background-grey;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  &:hover {
+    &::before {
+      border-color: $border-grey;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: $active-grey;
+    }
+  }
+}
+
+.sights-item__input:checked + .sights-item__label::after {
+  content: "";
+  position: absolute;
+  left: 16px;
+  top: 5px;
+  width: 24px;
+  height: 17px;
+  background-image: url("../../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.sights-item__input:checked:active + .sights-item__label::after {
+  opacity: 0.3;
 }
