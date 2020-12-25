@@ -69,3 +69,7 @@
 .feeling-item__input:checked:active + .feeling-item__label::after {
   opacity: 0.3;
 }
+
+.feeling-item__input:disabled + .feeling-item__label {
+  color: $border-grey;
+}

@@ -67,3 +67,7 @@
 .sights-item__input:checked:active + .sights-item__label::after {
   opacity: 0.3;
 }
+
+.sights-item__input:disabled + .sights-item__label{
+  color: $border-grey;
+}
