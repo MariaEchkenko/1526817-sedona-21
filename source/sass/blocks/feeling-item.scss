@@ -1,3 +1,75 @@
+.feeling-item {
+  margin-bottom: 43px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
+
+  &:last-child {
+    margin-bottom: 41px;
+  }
+
+  &:first-child {
+    padding-top: 20px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 55px;
+    }
+  }
+}
+
 .feeling-item__label {
+  position: relative;
+  display: block;
+  padding-left: 78px;
+  cursor: pointer;
   font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 75px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -16px;
+    width: 56px;
+    height: 56px;
+    border: 28px solid $background-grey;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+
+  &:hover {
+    &::before {
+      border-color: $border-grey;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: $active-grey;
+    }
+  }
+}
+
+.feeling-item__input:checked + .feeling-item__label::after {
+  content: "";
+  position: absolute;
+  left: 17px;
+  top: 2px;
+  width: 22px;
+  height: 22px;
+  border: 11px solid $simple-black;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.feeling-item__input:checked:active + .feeling-item__label::after {
+  opacity: 0.3;
+}
+
+.feeling-item__input:disabled + .feeling-item__label {
+  color: $border-grey;
 }
