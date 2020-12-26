@@ -19,7 +19,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding-top: 22px;
+    padding-top: 17px;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,6 +37,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 16px;
     color: $white;
   }
 }

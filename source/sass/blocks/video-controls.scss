@@ -1,12 +1,121 @@
+.video-controls {
+  position: absolute;
+  bottom: -66px;
+  height: 89px;
+  width: calc(100% - 40px);
+  padding-top: 22px;
+  background-color: rgba(0, 0, 0, 0.6);
+  /*opacity: 0.6;*/
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    bottom: 0;
+    height: 48px;
+    width: calc(100% - 120px);
+    max-width: 800px;
+    padding-top: 45px;
+    margin: 0;
+  }
+}
+
 .video-controls__scale {
-  background-color: $black;
-  opacity: 0.6;
+  margin-left: 22px;
+  margin-right: 23px;
+  margin-bottom: 20px;
+  height: 3px;
+  background-color: $white;
+  opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 166px 45px 93px;
+  }
+}
+
+.video-controls__toggle {
+  position: absolute;
+  top: 17px;
+  left: 56px;
+  width: 13px;
+  height: 13px;
+  background-color: $white;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 40px;
+    left: 204px;
+  }
 }
 
 .video-controls__group {
+  display: flex;
   background-color: $background-grey;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    height: 93px;
+    width: 100%;
+    align-items: center;
     background-color: transparent;
+  }
+}
+
+.video-controls__button {
+  padding: 23px 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  &--reload {
+    margin-left: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 35px;
+    }
+  }
+
+  &--fullscreen {
+    margin-left: 31px;
+    margin-right: 23px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 41px;
+    }
+  }
+
+  &--subtitles {
+    margin-left: auto;
+  }
+}
+
+.video-controls__path {
+  @media (min-width: $tablet-width) {
+    fill: $white;
+  }
+}
+
+.video-controls__button:hover {
+  .video-controls__path {
+    fill: $simple-black;
+
+    @media (min-width: $tablet-width) {
+      fill: $white;
+      opacity: 0.6;
+    }
+  }
+}
+
+.video-controls__button:active {
+  .video-controls__path {
+    fill: $simple-black;
+    opacity: 0.3;
+
+    @media (min-width: $tablet-width) {
+      fill: $white;
+    }
   }
 }
