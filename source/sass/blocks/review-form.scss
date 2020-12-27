@@ -66,11 +66,13 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
-    margin-bottom: 56px;
+    margin-bottom: 60px;
+    padding: 18px 60px 13px 49px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 63px;
+    margin-bottom: 66px;
+    padding: 18px 132px 13px 133px;
   }
 }
 

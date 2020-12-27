@@ -10,10 +10,10 @@
   }
 
   &:first-child {
-    padding-top: 20px;
+    padding-top: 14px;
 
     @media (min-width: $tablet-width) {
-      padding-top: 55px;
+      padding-top: 49px;
     }
   }
 }

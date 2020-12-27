@@ -19,15 +19,11 @@
   font-size: 14px;
 }
 
-.copyright__icon:hover {
-  path {
-    fill: $blue-hover;
-  }
+.copyright__link:hover .copyright__icon {
+  fill: $blue-hover;
+}
 
-  &:active {
-    path {
-      fill: $black;
-      opacity: 0.3;
-    }
-  }
+.copyright__link:active .copyright__icon {
+  fill: $black;
+  opacity: 0.3;
 }
