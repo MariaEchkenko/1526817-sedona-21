@@ -14,9 +14,18 @@
 
 .social__item {
   margin-right: 6px;
+  background-color: $blue;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-active;
   }
 }
 
@@ -24,7 +33,7 @@
   display: block;
   width: 48px;
   height: 48px;
-  background-color: $blue;
+
 
   &--twitter {
     background-image: url("../../img/icon_twitter.svg");
@@ -44,11 +53,7 @@
     background-position: 50% 50%;
   }
 
-  &:hover {
-    background-color: $blue-hover;
-  }
-
   &:active {
-    background-color: $blue-active;
+    opacity: 0.3;
   }
 }
