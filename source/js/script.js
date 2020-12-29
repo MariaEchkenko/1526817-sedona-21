@@ -1,8 +1,8 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
-const buttonForm = document.querySelector(".review-form__button");
-const errorPopup = document.querySelector(".modal--error");
-const successPopup = document.querySelector(".modal--success");
+var buttonForm = document.querySelector(".review-form__button");
+var errorPopup = document.querySelector(".modal--error");
+var successPopup = document.querySelector(".modal--success");
 
 
 // Mobile menu
