@@ -109,6 +109,27 @@
   font-size: 14px;
   line-height: 21px;
   color: $simple-black;
+
+  @media (min-width: $tablet-width) {
+    &--habitation,
+    &--souvenirs {
+      padding: 0 12px;
+    }
+
+    &--food {
+      padding: 0 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--habitation {
+      padding: 0 40px;
+    }
+
+    &--souvenirs {
+      padding: 0 83px;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -1,4 +1,61 @@
-.map__img {
+.map__wrapper {
+  position: relative;
+  height: 350px;
+  max-width: 1200px;
+  background-color: $background-grey;
+  background-image: url("../../img/map_mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/map_mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/map_tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/map_tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/map_desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/map_desktop@2x.jpg");
+    }
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  &::before {
+    width: 27px;
+    height: 27px;
+    background-color: $white;
+    border-radius: 50%;
+  }
+
+  &::after {
+    width: 17px;
+    height: 17px;
+    background-color: $blue;
+    border-radius: 50%;
+  }
+}
+
+.map__iframe {
+  position: absolute;
+  height: 350px;
+  width: 100%;
   display: block;
-  margin: 0 auto;
+  z-index: 2;
 }
