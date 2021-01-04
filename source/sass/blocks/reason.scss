@@ -33,6 +33,14 @@
   @media (min-width: $tablet-width) {
     padding-top: 42px;
     padding-bottom: 42px;
+
+    &--area {
+      padding-left: 32px;
+    }
+
+    &--tourist {
+      padding-right: 32px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -54,7 +62,7 @@
   font-weight: bold;
 
   @media (min-width: $tablet-width) {
-    max-width: 160px;
+    max-width: 120px;
     font-size: 21px;
   }
 }
@@ -64,5 +72,19 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 25px;
+  }
+}
+
+.reason__description {
+  &--road {
+    padding: 0 28px;
+
+    @media (min-width: $desktop-width) {
+      padding: 0 40px;
+    }
+  }
+
+  &--tourist {
+    padding: 0 12px;
   }
 }

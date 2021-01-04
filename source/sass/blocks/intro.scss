@@ -151,6 +151,7 @@
   font-weight: bold;
 
   @media (min-width: $tablet-width) {
+    padding: 0 calc((100% - 445px) / 2);
     font-size: 21px;
 
     br:first-child {
@@ -183,7 +184,7 @@
   color: $simple-black;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 63px;
+    margin-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {

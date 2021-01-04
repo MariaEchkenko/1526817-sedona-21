@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <div class="page__wrapper">
@@ -49,7 +49,7 @@
               </picture>
             </div>
             <div class="intro__text intro__text--index page-main__container">
-              <h2 class="intro__title">Седона &mdash; небольшой<br> городок в Аризоне,<br> заслуживающий большего!</h2>
+              <h2 class="intro__title">Седона &mdash; небольшой городок&nbsp;в Аризоне, заслуживающий большего!</h2>
               <p class="intro__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
             </div>
           </div>
@@ -76,22 +76,22 @@
             <ul class="features__list benefit">
               <li class="benefit__item benefit__item--habitation page-main__container">
                 <h3 class="benefit__title">Жилье</h3>
-                <p class="benefit__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <p class="benefit__description benefit__description--habitation">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
               <li class="benefit__item benefit__item--souvenirs page-main__container">
                 <h3 class="benefit__title">Сувениры</h3>
-                <p class="benefit__description">Не только китайского, но и местного производства!</p>
+                <p class="benefit__description benefit__description--souvenirs">Не только китайского, но и местного производства!</p>
               </li>
               <li class="benefit__item benefit__item--food page-main__container">
                 <h3 class="benefit__title">Еда</h3>
-                <p class="benefit__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p class="benefit__description benefit__description--food">Всегда заказывайте фирменный бургер, вы&nbsp;не разочаруетесь!</p>
               </li>
             </ul>
             <div class="features__item">
-              <div class="features__text page-main__container">
+              <div class="features__text features__text--bridge page-main__container">
                 <h3 class="features__title">Там есть мост&nbsp;дьявола</h3>
                 <p class="features__number">№2</p>
-                <p class="features__description">Да, по нему можно пройти!Если вы осмелитесь, конечно</p>
+                <p class="features__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <div class="features__img-wrapper features__img-wrapper--first">
                 <picture>
@@ -105,7 +105,7 @@
               </div>
             </div>
             <ul class="features__list reason">
-              <li class="reason__item page-main__container">
+              <li class="reason__item  reason__item--area page-main__container">
                 <h3 class="reason__title">Небольшая площадь</h3>
                 <p class="reason__number">№3</p>
                 <p class="reason__description">Все интересные места находятся очень близко</p>
@@ -113,12 +113,12 @@
               <li class="reason__item page-main__container">
                 <h3 class="reason__title">Красивая дорога</h3>
                 <p class="reason__number">№4</p>
-                <p class="reason__description">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
+                <p class="reason__description reason__description--road">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </li>
-              <li class="reason__item page-main__container">
+              <li class="reason__item reason__item--tourist page-main__container">
                 <h3 class="reason__title">Мало туристов</h3>
                 <p class="reason__number">№5</p>
-                <p class="reason__description">Большинство едет в Гранд-Каньон и&nbsp;толпится там!</p>
+                <p class="reason__description reason__description--tourist">Большинство едет в Гранд-Каньон и толпится там!</p>
               </li>
             </ul>
           </div>
@@ -135,7 +135,7 @@
 
         <section class="map">
           <div class="map__wrapper">
-            <img class="map__img" src="https://via.placeholder.com/320x350" alt="Город Седона на карте">
+            <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d590497.0680205327!2d-111.85638432025371!3d35.15496826733318!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1609222457008!5m2!1sru!2sru" width="320" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
         </section>
       </main>
@@ -170,7 +170,7 @@
       </footer>
     </div>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
 
   </body>
 </html>

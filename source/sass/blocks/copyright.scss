@@ -14,9 +14,19 @@
 
 .copyright__title {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   padding-right: 10px;
   font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.copyright__link {
+  @media (min-width: $tablet-width) {
+    padding-top: 8px;
+  }
 }
 
 .copyright__link:hover .copyright__icon {
