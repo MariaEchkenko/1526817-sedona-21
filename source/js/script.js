@@ -19,9 +19,10 @@ navToggle.addEventListener('click', function() {
   }
 });
 
-// Popup
+/*// Popup
 
 buttonForm.addEventListener("click", function (evt) {
   evt.preventDefault();
   successPopup.classList.add("modal--show");
 });
+*/

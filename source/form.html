@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page__body">
@@ -124,7 +126,9 @@
           </fieldset>
           <fieldset class="review-form__item review-form__item--emotion form-component">
             <legend class="form-component__title form-component__title--emotion form-component__title--line">Опишите свои эмоции:</legend>
-            <textarea class="form-component__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+            <label aria-label="Текст отзыва">
+              <textarea class="form-component__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+            </label>
           </fieldset>
           <div class="review-form__wrapper">
             <button class="review-form__button button" type="submit">Отправить отзыв</button>
