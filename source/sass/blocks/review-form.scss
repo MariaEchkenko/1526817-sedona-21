@@ -1,20 +1,22 @@
 .review-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
   }
 }
 
 .review-form__item {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   border: none;
   width: 100%;
 
   &--user {
-    display: flex;
-    flex-direction: column;
-
     @media (min-width: $tablet-width) {
       padding-left: 58px;
       box-sizing: border-box;
@@ -49,6 +51,7 @@
 .review-form__wrapper {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
 
   &--contacts {

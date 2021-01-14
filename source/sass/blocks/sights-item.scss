@@ -55,7 +55,7 @@
   top: 5px;
   width: 24px;
   height: 17px;
-  background-image: url("../../img/tick.svg");
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -66,4 +66,8 @@
 
 .sights-item__input:disabled + .sights-item__label {
   color: $border-grey;
+}
+
+.sights-item__input:focus + .sights-item__label::before {
+  outline: 2px solid $simple-black;
 }
