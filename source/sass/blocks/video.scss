@@ -24,7 +24,7 @@
 
 .video__wrapper {
   position: relative;
-  background-image: url("../../img/video_mobile.jpg");
+  background-image: url("../img/video_mobile.jpg");
   background-repeat: no-repeat;
   background-position: center 163px;
   background-size: 100% 201px;
@@ -32,14 +32,14 @@
   @media (min-width: $tablet-width) {
     max-width: 800px;
     margin: 0 auto;
-    background-image: url("../../img/video_tablet.jpg");
+    background-image: url("../img/video_tablet.jpg");
     background-position: center 188px;
     background-size: calc(100% - 120px) 500px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 200px;
-    background-image: url("../../img/video_desktop.jpg");
+    background-image: url("../img/video_desktop.jpg");
     background-position: center 188px;
     background-size: 800px 500px;
   }
