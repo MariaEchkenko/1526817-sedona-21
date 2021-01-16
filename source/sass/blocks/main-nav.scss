@@ -55,9 +55,8 @@
     display: none;
   }
 
-  .main-nav--nojs .main-nav__wrapper {
-    position: static;
-    min-height: 0;
+  .main-nav--nojs .main-nav__item {
+    display: block;
   }
 
   .main-nav--opened .main-nav__list::before {
@@ -69,7 +68,8 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
   }
 
-  .main-nav--opened .main-nav__wrapper {
+  .main-nav--opened .main-nav__wrapper,
+  .main-nav--nojs .main-nav__wrapper {
     order: 2;
     min-height: 56px;
   }
